@@ -14,7 +14,7 @@ Implemented as three services in [`docker-compose.yml`](docker-compose.yml):
 
 - `mssqlserver` — `mcr.microsoft.com/mssql/server:2022-preview-ubuntu-22.04`
 - `php` — custom [`Dockerfile`](Dockerfile) (`php:7.3-fpm-buster` + `msodbcsql17`/`pdo_sqlsrv`/`sqlsrv` extensions) serving `QuickDbTest.php`
-- `nginx` — reverse proxy in front of PHP-FPM ([`nginx.conf`](nginx.conf), [`nginx-config/default.conf`](nginx-config/default.conf))
+- `nginx` — reverse proxy in front of PHP-FPM ([`nginx.conf`](nginx.conf))
 
 ## Running
 
